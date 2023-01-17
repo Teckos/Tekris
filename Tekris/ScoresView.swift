@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+//Displays the useful informations.
+//Text size as argument so the view can be adjusted
 struct ScoresView: View {
     @EnvironmentObject var board: Board
     let size : Double

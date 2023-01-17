@@ -16,8 +16,10 @@ Couldn't work with shapes other than the bar because of the tiles "behind".
 Example L shaped brick (orange):
 
 1
+
 2
-3 4
+
+3  4
 
 The method collision(((1,0),(1,0),(1,0),(1,0))) (tests if there's a collision with a y+1 movement, so towards the bottom) was never true because of the tiles 2 & 1 which future location were respectively 3 & 2.
 Overcome this simply by deleting the actual brick before testing it's future location. The brick is redrawn right after the conditions are tested.
